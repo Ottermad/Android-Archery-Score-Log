@@ -1,0 +1,237 @@
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/addScoreScrollView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="me.attwoodthomas.archeryscorelog.AddScoreActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/arrowOneEditText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint="@string/arrowOneTextValue"
+                android:layout_marginBottom="@dimen/add_score_edit_text_spacing"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/arrowTwoEditText"
+                android:layout_below="@+id/arrowOneEditText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint="@string/arrowTwoTextValue"
+                android:layout_marginBottom="@dimen/add_score_edit_text_spacing"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/arrowThreeEditText"
+                android:layout_below="@+id/arrowTwoEditText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint="@string/arrowThreeTextValue"
+                android:layout_marginBottom="@dimen/add_score_edit_text_spacing"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/arrowFourEditText"
+                android:layout_below="@+id/arrowThreeEditText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint="@string/arrowFourTextValue"
+                android:layout_marginBottom="@dimen/add_score_edit_text_spacing"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/arrowFiveEditText"
+                android:layout_below="@+id/arrowFourEditText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint="@string/arrowFiveTextValue"
+                android:layout_marginBottom="@dimen/add_score_edit_text_spacing"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/arrowSixEditText"
+                android:layout_below="@+id/arrowFiveEditText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint="@string/arrowSixTextValue"
+                android:layout_marginBottom="@dimen/add_score_edit_text_spacing"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/numberOfArrowsEditText"
+                android:layout_below="@+id/arrowSixEditText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint="@string/totalNumberOfArrowsTextView"
+                android:layout_marginBottom="@dimen/add_score_edit_text_spacing"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/distanceEditText"
+                android:layout_below="@+id/numberOfArrowsEditText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="@dimen/add_score_edit_text_spacing"
+                android:hint="@string/distanceTextValue" />
+
+            <!--<EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/unitsEditText"
+                android:hint="@string/unitsEditText"
+                android:layout_below="@+id/distanceEditText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="@dimen/add_score_edit_text_spacing"/>-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/unitsEditText"
+                android:id="@+id/unitsTextView"
+                android:layout_below="@+id/distanceEditText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="@dimen/add_score_edit_text_spacing"/>
+
+            <Spinner
+                android:id="@+id/units_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/unitsTextView"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/locationEditText"
+                android:hint="@string/locationEditTextValue"
+                android:layout_below="@+id/units_spinner"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="@dimen/add_score_edit_text_spacing"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/styleTextView"
+                android:id="@+id/styleAddScoreTextView"
+                android:layout_below="@+id/locationEditText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/styleAddScoreTextView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/styleRadioGroup"
+                android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/barebowTextValue"
+                        android:id="@+id/radioButton"
+                        android:layout_weight="0.50"/>
+
+                    <RadioButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sightsTextValue"
+                        android:id="@+id/radioButton2"
+                        android:layout_weight="0.5" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/indoorOrOutdoorTextValue"
+                android:id="@+id/indoorOutdoorTextView"
+                android:layout_below="@+id/styleRadioGroup"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/indoorOutdoorTextView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/indoorOutdoorRadioGroup"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/indoorTextValue"
+                    android:id="@+id/indoorRadioButton"
+                    android:layout_weight="0.50"/>
+
+                <RadioButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/outdoorTextValue"
+                    android:id="@+id/outdoorRadioButton"
+                    android:layout_weight="0.5" />
+
+            </RadioGroup>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/addScoreTextValue"
+                android:id="@+id/addScoreButton"
+                android:layout_below="@+id/indoorOutdoorRadioGroup"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+        </RelativeLayout>
+
+        </ScrollView>
+
+
+

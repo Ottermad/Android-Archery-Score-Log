@@ -1,0 +1,344 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="me.attwoodthomas.archeryscorelog.ViewScoreActivity"
+    >
+
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/locationEditTextValue"
+        android:id="@+id/locationTextView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_marginBottom="@dimen/add_score_edit_text_spacing"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/locationValueTextView"
+        android:layout_below="@+id/locationTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dateTimeTextValue"
+        android:id="@+id/dateTimeTextView"
+        android:layout_below="@+id/locationValueTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_marginBottom="@dimen/add_score_edit_text_spacing"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dateTimeValueTextView"
+        android:layout_below="@+id/dateTimeTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/distanceTextValue"
+        android:id="@+id/distanceTextView"
+        android:layout_below="@+id/dateTimeValueTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/distanceTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1"
+        android:id="@+id/distanceLinearLayout"
+        android:focusableInTouchMode="false">
+
+       <TextView
+           android:layout_marginBottom="@dimen/add_score_edit_text_spacing"
+           android:textAppearance="?android:attr/textAppearanceMedium"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/distanceValueTextView"
+           android:layout_weight="0.5"/>
+
+        <TextView
+            android:layout_marginBottom="@dimen/add_score_edit_text_spacing"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/distanceUnitValueTextView"
+            android:layout_weight="0.5"/>
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/styleTextView"
+        android:id="@+id/styleTextView"
+        android:layout_below="@+id/distanceLinearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_marginBottom="@dimen/add_score_edit_text_spacing"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/styleValueTextView"
+        android:layout_below="@+id/styleTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/indoorOrOutdoorTextValue"
+        android:id="@+id/indoorOutdoorTextView"
+        android:layout_below="@+id/styleValueTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_marginBottom="@dimen/add_score_edit_text_spacing"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/indoorOutdoorValueTextView"
+        android:layout_below="@+id/indoorOutdoorTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/totalNumberOfArrowsTextView"
+        android:id="@+id/numberOfArrowsTextView"
+        android:layout_below="@+id/indoorOutdoorValueTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_marginBottom="@dimen/add_score_edit_text_spacing"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numberOfArrowsValueTextView"
+        android:layout_below="@+id/numberOfArrowsTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/numberOfArrowsValueTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1"
+        android:id="@+id/arrow1LinearLayout"
+        android:focusableInTouchMode="false">
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/arrowOneTextValue"
+            android:id="@+id/arrow1TextView"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/arrow1ValueTextView"
+            android:layout_weight="0.5"
+            android:gravity="end" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_below="@+id/arrow1LinearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/arrow2LinearLayout">
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/arrowTwoTextValue"
+            android:id="@+id/arrow2TextView"
+            android:layout_weight="0.5" />
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/arrow2ValueTextView"
+            android:layout_weight="0.5"
+            android:gravity="end" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_below="@+id/arrow2LinearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/arrow3LinearLayout">
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/arrowThreeTextValue"
+            android:id="@+id/arrow3TextView"
+            android:layout_weight="0.5" />
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/arrow3ValueTextView"
+            android:layout_weight="0.5"
+            android:gravity="end" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_below="@+id/arrow3LinearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/arrow4LinearLayout">
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/arrowFourTextValue"
+            android:id="@+id/arrow4TextView"
+            android:layout_weight="0.5" />
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/arrow4ValueTextView"
+            android:layout_weight="0.5"
+            android:gravity="end" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_below="@+id/arrow4LinearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/arrow5LinearLayout">
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/arrowFiveTextValue"
+            android:id="@+id/arrow5TextView"
+            android:layout_weight="0.5" />
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/arrow5ValueTextView"
+            android:layout_weight="0.5"
+            android:gravity="end" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_below="@+id/arrow5LinearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/arrow6LinearLayout">
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/arrowSixTextValue"
+            android:id="@+id/arrow6TextView"
+            android:layout_weight="0.5" />
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/arrow6ValueTextView"
+            android:layout_weight="0.5"
+            android:gravity="end" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_below="@+id/arrow6LinearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/totalLinearLayout">
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/totalTextValue"
+            android:id="@+id/totalTextView"
+            android:layout_weight="0.5" />
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalValueTextView"
+            android:layout_weight="0.5"
+            android:gravity="end" />
+    </LinearLayout>
+
+</RelativeLayout>
